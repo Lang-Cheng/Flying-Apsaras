@@ -7,14 +7,9 @@ import {
     Settings as SettingsIcon
 } from '@material-ui/icons';
 
-export interface SidebarItem {
-    path: string;
-    icon: React.ReactNode;
-    name: string;
-    children?: SidebarItem[];
-}
+import NavigationItem from './NavigationItem';
 
-const SidebarList: SidebarItem[] = [
+const NavagationList: NavigationItem[] = [
     {
         path: '/main',
         name: '首页',
@@ -27,9 +22,14 @@ const SidebarList: SidebarItem[] = [
     },
     {
         path: '/items',
-        name: '殡葬用品',
+        name: '其他',
         icon: <AccountBoxIcon />
+    },
+    {
+        path: '/settings',
+        name: '设置',
+        icon: <SettingsIcon />
     }
 ];
 
-export default SidebarList;
+export default NavagationList;

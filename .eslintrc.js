@@ -34,6 +34,7 @@ module.exports = {
         'linebreak-style': 'off',
         'no-nested-ternary': 'off',
         '@typescript-eslint/no-use-before-define': 'off',
+        'react/jsx-props-no-spreading': 'off',
         'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
         'prettier/prettier': ['error', { usePrettierrc: true }],
         'import/order': [

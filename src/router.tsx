@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 
 import { Dashboard } from 'layout';
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { AboutUs, Main } from 'view';
 
 interface RouterItem {
     path: string;
@@ -42,7 +43,19 @@ const routerConfig: RouterItem[] = [
         children: [
             {
                 path: '/main',
-                component: () => <div>主要入口</div>
+                component: () => <Main />
+            },
+            {
+                path: '/aboutus',
+                component: () => <AboutUs />
+            },
+            {
+                path: '/items',
+                component: () => <div style={{ width: '100%', height: '100vh' }}>items</div>
+            },
+            {
+                path: '/settings',
+                component: () => <div style={{ width: '100%', height: '100vh' }}>settings</div>
             },
             {
                 path: '/',
