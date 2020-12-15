@@ -40,24 +40,33 @@ const MapContainer = () => {
             <ButtonGroup color="default">
                 <Button
                     onClick={() => {
-                        setIndex(0);
-                        setVisible(true);
+                        setVisible(false);
+                        setTimeout(() => {
+                            setIndex(0);
+                            setVisible(true);
+                        }, 10);
                     }}
                 >
                     显示总店
                 </Button>
                 <Button
                     onClick={() => {
-                        setIndex(1);
-                        setVisible(true);
+                        setVisible(false);
+                        setTimeout(() => {
+                            setIndex(1);
+                            setVisible(true);
+                        }, 10);
                     }}
                 >
                     显示分店1
                 </Button>
                 <Button
                     onClick={() => {
-                        setIndex(2);
-                        setVisible(true);
+                        setVisible(false);
+                        setTimeout(() => {
+                            setIndex(2);
+                            setVisible(true);
+                        }, 10);
                     }}
                 >
                     显示分店2
@@ -72,9 +81,7 @@ const MapContainer = () => {
                     <Marker visiable position={data[2].position} />
                     <InfoWindow
                         visiable={visible}
-                        closeWhenClickMap
                         position={data[index].position}
-                        onClose={() => setVisible(false)}
                         content={data[index].title + data[index].content}
                     />
                 </Map>
