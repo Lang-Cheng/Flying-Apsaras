@@ -4,7 +4,7 @@ import { Button, Icon } from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Toolbar from '@material-ui/core/Toolbar';
-import { ContactPhone } from '@material-ui/icons';
+import { Phone } from '@material-ui/icons';
 import { getSidebarTrigger, getHeader } from '@mui-treasury/layout';
 import logo from 'assets/img/logo.png';
 import useStyles from 'assets/style/layout/DashboardStyle';
@@ -55,7 +55,7 @@ const AppTab: FC = () => {
                     color="default"
                     size="large"
                     href="tel:13402654444"
-                    startIcon={<ContactPhone />}
+                    startIcon={<Phone />}
                 >
                     联系我们
                 </Button>

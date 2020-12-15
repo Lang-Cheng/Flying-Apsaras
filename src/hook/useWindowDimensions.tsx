@@ -1,16 +1,20 @@
 import { useState, useEffect } from 'react';
 
+import theme from 'theme';
+
 const getWindowDimensions = () => {
     const { innerWidth: width, innerHeight: height } = window;
     return {
         width,
-        height
+        height,
+        isMobile: width < theme.breakpoints.values.md
     };
 };
 
 type IWindowDimensions = {
     width: number;
     height: number;
+    isMobile: boolean;
 };
 
 const useWindowDimensions = (): IWindowDimensions => {
