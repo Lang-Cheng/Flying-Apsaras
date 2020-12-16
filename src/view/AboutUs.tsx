@@ -1,7 +1,9 @@
 import React, { FC } from 'react';
 
+import { Container } from '@material-ui/core';
+
 const AboutUs: FC = () => {
-    return <div style={{ width: '100%', height: '100vh' }}>aboutus</div>;
+    return <Container maxWidth="lg">关于我们</Container>;
 };
 
 export default AboutUs;

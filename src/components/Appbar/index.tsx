@@ -1,5 +1,5 @@
-import Appbar from './Appbar';
+import AppBar from './AppBar';
 
-export { Appbar };
+export { AppBar };
 
-export default Appbar;
+export default AppBar;

@@ -2,7 +2,7 @@ import React, { FC, PropsWithChildren, ReactNode } from 'react';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout, { Root, getContent } from '@mui-treasury/layout';
-import Appbar from 'components/Appbar';
+import AppBar from 'components/AppBar';
 import Footer from 'components/Footer';
 import Sidebar from 'components/Sidebar/Sidebar';
 import styled from 'styled-components';
@@ -16,7 +16,7 @@ scheme.configureHeader((builder) => {
         .create('Header')
         .registerConfig('md', {
             position: 'sticky',
-            initialHeight: 72
+            initialHeight: 112
         })
         .registerConfig('xs', {
             position: 'sticky',
@@ -38,7 +38,7 @@ const Dashboard: FC = (props: PropsWithChildren<ReactNode>) => {
             {({ setOpen }) => (
                 <>
                     <CssBaseline />
-                    <Appbar />
+                    <AppBar />
                     <Sidebar setOpen={setOpen} />
                     <Content>{children}</Content>
                     <Footer />

@@ -25,6 +25,7 @@ const Sidebar: FC<SidebarProps> = (props: SidebarProps) => {
 
     const onNavClick = (path: string) => {
         history.push(path);
+        window.scrollTo(0, 0);
         setOpen('primarySidebar', false);
     };
 

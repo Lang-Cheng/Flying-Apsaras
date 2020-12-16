@@ -55,6 +55,16 @@ const useStyles = makeStyles((theme) => ({
             borderBottomRightRadius: 3
         },
         backgroundColor: `${theme.palette.action.selected}`
+    },
+    footer: {
+        borderTop: `1px solid ${theme.palette.divider}`,
+        marginTop: theme.spacing(8),
+        paddingTop: theme.spacing(3),
+        paddingBottom: theme.spacing(3),
+        [theme.breakpoints.up('md')]: {
+            paddingTop: theme.spacing(5),
+            paddingBottom: theme.spacing(5)
+        }
     }
 }));
 

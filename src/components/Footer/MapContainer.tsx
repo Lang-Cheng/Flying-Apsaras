@@ -17,18 +17,18 @@ const MapDisplay: FC = () => {
     const data = [
         {
             position: new AMap.LngLat(120.626528, 31.323818, false),
-            title: '<h1 style="font-size: 14px;">苏州市飞天殡葬用品服务有限公司(齐门路)</h1>',
-            content: '<body1 style="font-size: 14px;">地址：苏州市姑苏区齐门路87号</body1>'
+            title: '<h1 style="font-size: 12px;">苏州市飞天殡葬用品服务有限公司(齐门路)</h1>',
+            content: '<body1 style="font-size: 12px;">地址：苏州市姑苏区齐门路87号</body1>'
         },
         {
             position: new AMap.LngLat(120.643575, 31.320755, false),
-            title: '<h1 style="font-size: 14px;">苏州市飞天殡葬用品服务有限公司(日规路)</h1>',
-            content: '<body1 style="font-size: 14px;">地址：苏州市姑苏区日规路6号</body1>'
+            title: '<h1 style="font-size: 12px;">苏州市飞天殡葬用品服务有限公司(日规路)</h1>',
+            content: '<body1 style="font-size: 12px;">地址：苏州市姑苏区日规路6号</body1>'
         },
         {
             position: new AMap.LngLat(120.625392, 31.333198, false),
-            title: '<h1 style="font-size: 14px;">苏州市飞天殡葬用品服务有限公司(齐门外大街)</h1>',
-            content: '<body1 style="font-size: 14px;">地址：苏州市姑苏区齐门外大街129号</body1>'
+            title: '<h1 style="font-size: 12px;">苏州市飞天殡葬用品服务有限公司(齐门外大街)</h1>',
+            content: '<body1 style="font-size: 12px;">地址：苏州市姑苏区齐门外大街129号</body1>'
         }
     ];
 

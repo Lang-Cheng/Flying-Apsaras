@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { Button, Icon } from '@material-ui/core';
+import { Button, Icon, Paper } from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -15,40 +15,23 @@ import styled from 'styled-components';
 const Header = getHeader(styled);
 const SidebarTrigger = getSidebarTrigger(styled);
 
-const AppTab: FC = () => {
+const Headbar: FC = () => {
     const classes = useStyles();
     const history = useHistory();
     const location = useLocation();
 
     const onNavClick = (path: string) => {
         history.push(path);
+        window.scrollTo(0, 0);
     };
 
     return (
-        <Header>
+        <Header style={{ marginBottom: 50 }}>
             <Toolbar className={classes.toolbar}>
                 <SidebarTrigger className={classes.sidebarTrigger} sidebarId="primarySidebar" />
                 <Icon className={classes.icon}>
                     <img className={classes.logo} src={logo} alt="logo" />
                 </Icon>
-                <Tabs
-                    className={classes.tabs}
-                    value={Navigation.findIndex((item) => matchPath(location.pathname, item.path))}
-                    indicatorColor="primary"
-                    textColor="primary"
-                    variant="scrollable"
-                    scrollButtons="auto"
-                    aria-label="scrollable auto tabs example"
-                >
-                    {Navigation.map((item) => (
-                        <Tab
-                            onClick={() => onNavClick(item.path)}
-                            key={item.path}
-                            label={item.name}
-                            icon={item.icon}
-                        />
-                    ))}
-                </Tabs>
                 <Button
                     className={classes.contact}
                     variant="text"
@@ -60,8 +43,27 @@ const AppTab: FC = () => {
                     联系我们
                 </Button>
             </Toolbar>
+            <Paper>
+                <Tabs
+                    className={classes.tabs}
+                    value={Navigation.findIndex((item) => matchPath(location.pathname, item.path))}
+                    indicatorColor="primary"
+                    textColor="primary"
+                    centered
+                    scrollButtons="auto"
+                    aria-label="scrollable auto tabs example"
+                >
+                    {Navigation.map((item) => (
+                        <Tab
+                            onClick={() => onNavClick(item.path)}
+                            key={item.path}
+                            label={item.name}
+                        />
+                    ))}
+                </Tabs>
+            </Paper>
         </Header>
     );
 };
 
-export default AppTab;
+export default Headbar;

@@ -1,11 +1,13 @@
 import AboutUs from './AboutUs';
-import Main from './Main';
+import Home from './Home';
+import Products from './Products';
 
-export { Main, AboutUs };
+export { Home, AboutUs, Products };
 
 const View = {
-    Main,
-    AboutUs
+    Home,
+    AboutUs,
+    Products
 };
 
 export default View;
