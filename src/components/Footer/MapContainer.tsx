@@ -63,6 +63,7 @@ const MapDisplay: FC = () => {
                     <InfoWindow
                         visiable={visible}
                         position={data[index].position}
+                        offset={new AMap.Pixel(0, -30)}
                         content={data[index].title + data[index].content}
                     />
                 </Map>
