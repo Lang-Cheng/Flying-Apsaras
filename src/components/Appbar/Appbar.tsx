@@ -15,7 +15,7 @@ import styled from 'styled-components';
 const Header = getHeader(styled);
 const SidebarTrigger = getSidebarTrigger(styled);
 
-const Headbar: FC = () => {
+const AppBar: FC = () => {
     const classes = useStyles();
     const history = useHistory();
     const location = useLocation();
@@ -66,4 +66,4 @@ const Headbar: FC = () => {
     );
 };
 
-export default Headbar;
+export default AppBar;
