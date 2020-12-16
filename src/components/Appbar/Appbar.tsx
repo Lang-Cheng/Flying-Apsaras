@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 
-import { Button, Icon, Paper } from '@material-ui/core';
+import { Button, Icon } from '@material-ui/core';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -43,25 +43,19 @@ const AppBar: FC = () => {
                     联系我们
                 </Button>
             </Toolbar>
-            <Paper>
-                <Tabs
-                    className={classes.tabs}
-                    value={Navigation.findIndex((item) => matchPath(location.pathname, item.path))}
-                    indicatorColor="primary"
-                    textColor="primary"
-                    centered
-                    scrollButtons="auto"
-                    aria-label="scrollable auto tabs example"
-                >
-                    {Navigation.map((item) => (
-                        <Tab
-                            onClick={() => onNavClick(item.path)}
-                            key={item.path}
-                            label={item.name}
-                        />
-                    ))}
-                </Tabs>
-            </Paper>
+            <Tabs
+                className={classes.tabs}
+                value={Navigation.findIndex((item) => matchPath(location.pathname, item.path))}
+                indicatorColor="primary"
+                textColor="primary"
+                centered
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
+            >
+                {Navigation.map((item) => (
+                    <Tab onClick={() => onNavClick(item.path)} key={item.path} label={item.name} />
+                ))}
+            </Tabs>
         </Header>
     );
 };
