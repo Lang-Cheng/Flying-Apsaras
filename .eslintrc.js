@@ -1,17 +1,5 @@
 module.exports = {
-    root: true,
     parser: '@typescript-eslint/parser',
-    plugins: ['react', '@typescript-eslint', 'jest'],
-    env: {
-        browser: true,
-        node: true,
-        es6: true,
-        jest: true
-    },
-    globals: {
-        Atomics: 'readonly',
-        SharedArrayBuffer: 'readonly'
-    },
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -20,6 +8,7 @@ module.exports = {
         sourceType: 'module',
         project: 'tsconfig.json'
     },
+    plugins: ['react', '@typescript-eslint', 'jest'],
     extends: [
         'airbnb-typescript',
         'airbnb/hooks',
@@ -30,6 +19,18 @@ module.exports = {
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended'
     ],
+    root: true,
+    env: {
+        browser: true,
+        node: true,
+        es6: true,
+        jest: true
+    },
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly'
+    },
+    ignorePatterns: ['.eslintrc.js'],
     rules: {
         'linebreak-style': 'off',
         'no-nested-ternary': 'off',
