@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/Flying-Apsaras/static/js/main.d4a41d5e.chunk.js",
-    "main.js.map": "/Flying-Apsaras/static/js/main.d4a41d5e.chunk.js.map",
-    "runtime-main.js": "/Flying-Apsaras/static/js/runtime-main.7ba7448d.js",
-    "runtime-main.js.map": "/Flying-Apsaras/static/js/runtime-main.7ba7448d.js.map",
-    "static/js/2.86b375b6.chunk.js": "/Flying-Apsaras/static/js/2.86b375b6.chunk.js",
-    "static/js/2.86b375b6.chunk.js.map": "/Flying-Apsaras/static/js/2.86b375b6.chunk.js.map",
-    "static/js/3.82a30692.chunk.js": "/Flying-Apsaras/static/js/3.82a30692.chunk.js",
-    "static/js/3.82a30692.chunk.js.map": "/Flying-Apsaras/static/js/3.82a30692.chunk.js.map",
-    "index.html": "/Flying-Apsaras/index.html",
-    "static/js/2.86b375b6.chunk.js.LICENSE.txt": "/Flying-Apsaras/static/js/2.86b375b6.chunk.js.LICENSE.txt",
-    "static/media/logo.49bbf708.png": "/Flying-Apsaras/static/media/logo.49bbf708.png"
+    "main.js": "/static/js/main.d4a41d5e.chunk.js",
+    "main.js.map": "/static/js/main.d4a41d5e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.446ad245.js",
+    "runtime-main.js.map": "/static/js/runtime-main.446ad245.js.map",
+    "static/js/2.f79b3dc6.chunk.js": "/static/js/2.f79b3dc6.chunk.js",
+    "static/js/2.f79b3dc6.chunk.js.map": "/static/js/2.f79b3dc6.chunk.js.map",
+    "static/js/3.82a30692.chunk.js": "/static/js/3.82a30692.chunk.js",
+    "static/js/3.82a30692.chunk.js.map": "/static/js/3.82a30692.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.f79b3dc6.chunk.js.LICENSE.txt": "/static/js/2.f79b3dc6.chunk.js.LICENSE.txt",
+    "static/media/logo.49bbf708.png": "/static/media/logo.49bbf708.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ba7448d.js",
-    "static/js/2.86b375b6.chunk.js",
+    "static/js/runtime-main.446ad245.js",
+    "static/js/2.f79b3dc6.chunk.js",
     "static/js/main.d4a41d5e.chunk.js"
   ]
 }
