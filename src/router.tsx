@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import { Dashboard } from 'layout';
-import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import { AboutUs, Home, Products } from 'view';
 
 interface RouterItem {
@@ -30,9 +30,9 @@ const RouteElement = (routeItem: RouterItem, basePath: string) => {
 
 const CreateRouter = (routerConfig: RouterItem[]) => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>{routerConfig.map((item) => CreateRoute(item, ''))}</Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 

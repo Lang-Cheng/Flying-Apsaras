@@ -1,7 +1,7 @@
 {
     "name": "fei-tian",
     "version": "0.1.0",
-    "homepage": "http://Lang-Cheng.github.io/Flying-Apsaras",
+    "homepage": "http://lang-cheng.github.io",
     "private": true,
     "scripts": {
         "predeploy": "npm run build",
